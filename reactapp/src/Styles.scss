@@ -1,0 +1,30 @@
+#itemDiv {
+    float: right;
+}
+
+#itemDetail {
+ display: flex;
+ margin-top: 20px;
+}
+#itemDetailDiv{
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+}
+.imgDetail{
+    width: 400px;
+    height: 500px;
+    margin: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.countDiv {
+    display: flex;
+}
