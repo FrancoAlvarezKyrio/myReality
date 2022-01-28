@@ -1,14 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Loader from '../components/Loader';
 import ItemDetail from '../components/ItemDetail';
+import { CartContext } from '../contexts/CartContext';
+import { toast } from 'react-toastify';
 
 
 const ItemDetailContainer = () => {
 
   const [product,setProduct] = useState([])
   const [loading,setLoading] = useState(false)
+  const [added,setAdded] = useState(false)
   const { id } = useParams()
+  const { addToCart } = useContext(CartContext)
 
 useEffect(()=>{
   setLoading(true)
@@ -25,13 +29,15 @@ useEffect(()=>{
 },[])
 
 const onAdd = (count) => {
-  console.log(`Agregaste ${count} unidades de ${product.title}`)
+  addToCart(count , product)
+  setAdded(true)
+  toast.success(`The product was added to the cart`)
 }
 
 
   return(
     <div>
-      {loading ? <Loader/> : <ItemDetail onAdd={onAdd} product={product} />}
+      {loading ? <Loader/> : <ItemDetail onAdd={onAdd} product={product} added={added} />}
     </div>
   )
   

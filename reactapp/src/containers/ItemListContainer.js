@@ -1,7 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect , useState , useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemList from '../components/ItemList';
 import Loader from '../components/Loader';
+import { CartContext } from '../contexts/CartContext';
+import { db } from '../firebase';
+import { collection , getDocs } from "firebase/firestore"
+
 
 
 const ItemListContainer = () => {
@@ -9,20 +13,30 @@ const ItemListContainer = () => {
   const [products,setProducts] = useState([])
   const [loading,setLoading] = useState(false)
   const { id } = useParams()
+  const { cartArray } = useContext(CartContext)
 
 useEffect(()=>{
-  setLoading(true)
-  const url = id ? `https://fakestoreapi.com/products/category/${id}` : `https://fakestoreapi.com/products/`
-  const getCollection = fetch(url)
 
-  getCollection
-  .then(res=>res.json())
-  .then((res)=>{
-    setProducts(res)
-    setLoading(true)
+  const productsCollection = collection(db, "products")
+  const request = getDocs(productsCollection)
+
+  request
+  .then((result)=>{
+    const docs = result.docs
+    const newDocs = docs.map(doc=>{
+      const product = {
+        id : doc.id,
+        ...doc.data()
+      }
+      return product
+    })
+    setProducts(newDocs)
+    setLoading(false)
   })
-  .catch((err)=>console.log(err))
-  .finally(()=>setLoading(false))  
+  .catch((error)=>{
+    console.log(error)
+  })
+  
 },[id])
 
 

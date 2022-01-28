@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { BsCart } from "react-icons/bs";
+import { Badge} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { CartContext } from '../contexts/CartContext';
 
 const CartWidget = () => {
-  return (
   
-                    <div>
-                        <button>Cart</button>
-                    </div>
+  const { productAcc } = useContext(CartContext)
+
+  return (
+    <div>
+      <Link to="/cart"><BsCart id='cartWidget'/><Badge id='badge' >{productAcc()}</Badge></Link> 
+    </div>
   )
 };
 
