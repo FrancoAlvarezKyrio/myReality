@@ -5,7 +5,7 @@ const CartItem = ({ product , removeItem}) => {
   return (
     <Card id='cartItem'>
         <Container>
-            <Row>
+            <Row id='row'>
                 <Col>
                     <img src={product.item.image}/>  
                 </Col>

@@ -22,8 +22,7 @@ useEffect(()=>{
   const request = getDoc(docRef)
   request
   .then((result)=>{
-    const product = result.data()
-    setProduct(product)
+    setProduct({id:result.id, ...result.data()  })
     setLoading(false)
   })
   .catch((error)=>{

@@ -18,7 +18,6 @@ const CartProvider = ({ children }) => {
                 count
             }
             setCartArray([...cartArray, newObj])
-            //productCount()
         }   
     } 
 

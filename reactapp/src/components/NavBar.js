@@ -2,23 +2,22 @@ import React from 'react';
 import { Nav , Navbar , NavDropdown, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import CartWidget from './CartWidget';
-
 const NavBar = () => {
 
   return (
-  <Navbar bg="light" expand="lg">
+  <Navbar id='navBarDiv' expand="lg">
     <Container>
-    <img className='imagenLogo' src="logo192.png"/>
-      <Navbar.Brand as="span"><Link to="/">My Reality Grow</Link> </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+    <Link to='/'><img className='imagenLogo' src="images/growLogo.png"/></Link>
+      <Navbar.Brand as="span"><Link id='navTitle' to="/">My Reality Grow</Link> </Navbar.Brand>
+      <Navbar.Toggle id='navToggle' aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id='navCats' id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as="span"><Link to="/">Home</Link> </Nav.Link>
-                <NavDropdown title="Categories" id="basic-nav-dropdown">
-                  <NavDropdown.Item as="span"><Link to="/cat/vegetation">Vegetation</Link></NavDropdown.Item>
-                  <NavDropdown.Item as="span"><Link to="/cat/flowering">Flowering</Link></NavDropdown.Item>
+            <Nav.Link as="span"><Link id='navHome' to="/">Home</Link> </Nav.Link>
+                <NavDropdown id='navCats' title="Categories" id="basic-nav-dropdown">
+                  <NavDropdown.Item id='navCats' as="span"><Link id='navCats' to="/cat/vegetation">Vegetation</Link></NavDropdown.Item>
+                  <NavDropdown.Item id='navCats' as="span"><Link id='navCats' to="/cat/flowering">Flowering</Link></NavDropdown.Item>
                   </NavDropdown>
-                <Nav.Link as="span"><Link to="contact">Contact</Link></Nav.Link>
+                <Nav.Link as="span"><Link id='navContact' to="contact">Contact</Link></Nav.Link>
               </Nav>
             </Navbar.Collapse>
     <Link to="/cart"><CartWidget/></Link>

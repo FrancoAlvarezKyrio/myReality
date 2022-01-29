@@ -1,39 +1,72 @@
+
 //Nav
+#navBarDiv{
+    background-color: rgb(81, 233, 89);
+}
+#navTitle{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#navHome{
+    text-decoration: none;
+    color: white;
+}
+#navContact{
+    text-decoration: none;
+    color: white;
+}
+#navCats{
+    text-decoration: none;
+    color: white !important;
+    background-color: rgb(81, 233, 89);
+}
+#navToggle{
+    color: rgb(81, 233, 89);
+    border-color: rgb(81, 233, 89);
+}
 .imagenLogo{
-    width: 50px;
+    width: 125px;
+    height: 60px;
 }
 
 #cartWidget {
-    color: rgb(17, 192, 26);
+    color: rgb(255, 255, 255);
+    margin-left: 150px;
 }
 
 #badge {
-    background-color: rgb(17, 192, 26) !important;
-    color: rgb(255, 255, 255);
-    font-size: 9px;
-    width: 20px;
-    height: 15px;
-    margin-bottom: 70px;
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(81, 233, 89);
+}
+//Banner 
+#bannerImg{
+    height: 180px;
+    margin-bottom: 25px;
 }
 //Item
 #itemDiv {
-display: inline-block;
-padding: 10px;
-margin-left: 22px;
-    img{
-        height: 300px;
-        width: 250px;
-        margin-left: 15px;
-    }
-    button {
-       width: 100%;
-       background-color: rgb(17, 192, 26);
-       border-color: rgb(17, 192, 26) ;
-    }
-    button:hover {
-        background-color: rgb(15, 151, 22);
-        border-color: rgb(17, 192, 26) ;
-     }
+    display: inline-block;
+    padding: 10px;
+    margin-left: 32px;
+        img{
+            height: 300px;
+            width: 250px;
+            margin-left: 20px;
+        }
+        button {
+        width: 100%;
+        background-color: rgb(81, 233, 89);
+        border-color: rgb(81, 233, 89) ;
+        }
+        button:hover {
+            background-color: rgb(10, 151, 17) ;
+            border-color: rgb(10, 151, 17);
+        }
+        p{
+            font-size: 25px;
+        }
 }
 //Item detail
 .countDiv {
@@ -80,7 +113,7 @@ margin-left: 22px;
     background-color: red;
 }
 #addToCartButton{
-    background-color: rgb(17, 192, 26);
+    background-color: rgb(81, 233, 89);
 }
 //Cart
 #cart {
@@ -96,13 +129,16 @@ margin-left: 22px;
     img{
     width: 80px;
     height: 100px;
-    margin-top: 85px;
     }
     button{
     margin-left: 133px;
     margin-top: 25px;
     margin-bottom: 25px;
     }
+}
+#row{
+    display: flex;
+    align-items: center;
 }
 #totalCart{
     display: flex;
@@ -113,11 +149,11 @@ margin-left: 22px;
     button{
         margin-top: 25px;
         margin-bottom: 70px;
-       background-color: rgb(17, 192, 26) ;
-       border-color: rgb(17, 192, 26) ;
+       background-color: rgb(81, 233, 89) ;
+       border-color: rgb(81, 233, 89) ;
     }
     button:hover{
-        background-color: rgb(18, 145, 25) ;
+        background-color: rgb(10, 151, 17) ;
     }
 }
 //Footer
@@ -125,4 +161,91 @@ margin-left: 22px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media screen and (min-width: 1280px) {
+    //Nav
+    #navBarDiv{
+        background-color: rgb(81, 233, 89);
+    }
+    #navTitle{
+        font-size: 30px;
+        text-decoration: none;
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    #navHome{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    #navContact{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    #navCats{
+        text-decoration: none;
+        color: white !important;
+        background-color: rgb(81, 233, 89);
+        font-size: 20px;
+    }
+    #navToggle{
+        color: rgb(81, 233, 89);
+        border-color: rgb(81, 233, 89);
+    }
+
+    .imagenLogo{
+        width: 350px;
+        height: 150px;
+    }
+    
+    #cartWidget {
+        color: rgb(255, 255, 255);
+        margin-left: 500px;
+        margin-top: 50px;
+    }
+    
+    #badge {
+        background-color: rgb(255, 255, 255) !important;
+        color: rgb(81, 233, 89);
+        font-size: 15px;
+        width: 30px;
+        height: 25px;
+        margin-left: 540px;
+        margin-bottom: 50px;
+    }
+    //Banner 
+    #bannerImg{
+        height: 400px;
+        margin-bottom: 25px;
+    }
+    //Item
+    #itemDiv {
+        display: inline-block;
+        padding: 45px;
+        margin-left: 32px;
+        max-width: 550px;
+            img{
+                height: 300px;
+                width: 250px;
+                margin-left: 20px;
+            }
+            button {
+            width: 100%;
+            background-color: rgb(81, 233, 89);
+            border-color: rgb(81, 233, 89) ;
+            }
+            button:hover {
+                background-color: rgb(10, 151, 17) ;
+                border-color: rgb(10, 151, 17);
+            }
+            p{
+                font-size: 35px;
+            }
+            .titleItemDetail{
+                font-size: 18px;
+                color: red;
+            }
+    }
 }

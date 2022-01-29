@@ -9,14 +9,16 @@ import { BrowserRouter, Routes , Route } from 'react-router-dom';
 import Cart from './containers/Cart';
 import CartProvider from './contexts/CartContext'
 import { ToastContainer } from 'react-toastify';
+import Header from './components/Header';
 
 
 const App = () => {
     return (
         
-          <CartProvider>
+          <CartProvider id="body">
             <BrowserRouter>
                 <NavBar/>
+                <Header/>
                     <Routes>
                         <Route path="/" element={<ItemListContainer/>} />
                         <Route path="/cat/:id" element={<ItemListContainer/>} />

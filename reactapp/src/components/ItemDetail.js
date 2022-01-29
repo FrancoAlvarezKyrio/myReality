@@ -10,7 +10,7 @@ const ItemDetail = ({product, onAdd , added}) => {
     return (
         <div id="divItemDetail">
                     <Card id='cardItemDetail' style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={image} />
+                    <Card.Img variant="top" src={`/${image}`} />
                     <Card.Body>
                     <Card.Title className='titleItemDetail'>{title}</Card.Title>
                     <Card.Text>

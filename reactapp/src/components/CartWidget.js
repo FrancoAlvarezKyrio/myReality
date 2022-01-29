@@ -10,7 +10,7 @@ const CartWidget = () => {
 
   return (
     <div>
-      <Link to="/cart"><BsCart id='cartWidget'/><Badge id='badge' >{productAcc()}</Badge></Link> 
+      <Link to="/cart"><BsCart size="30px" id='cartWidget'/><Badge id='badge' >{productAcc()}</Badge></Link> 
     </div>
   )
 };
