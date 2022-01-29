@@ -4,6 +4,8 @@ import Loader from '../components/Loader';
 import ItemDetail from '../components/ItemDetail';
 import { CartContext } from '../contexts/CartContext';
 import { toast } from 'react-toastify';
+import { db } from '../firebase';
+import { collection, getDoc, doc } from 'firebase/firestore';
 
 
 const ItemDetailContainer = () => {
@@ -15,18 +17,21 @@ const ItemDetailContainer = () => {
   const { addToCart } = useContext(CartContext)
 
 useEffect(()=>{
-  setLoading(true)
-  const url = `https://fakestoreapi.com/products/${id}`
-  const getItem= fetch(url)
-
-  getItem
-  .then(res=>res.json())
-  .then((res)=>{
-    setProduct(res)
+  const productsCollection = collection(db, "products")
+  const docRef = doc(productsCollection,id)
+  const request = getDoc(docRef)
+  request
+  .then((result)=>{
+    const product = result.data()
+    setProduct(product)
+    setLoading(false)
   })
-  .catch((err)=>console.log(err))
-  .finally(()=>setLoading(false))  
-},[])
+  .catch((error)=>{
+    console.log(error)
+  })
+
+
+},[id])
 
 const onAdd = (count) => {
   addToCart(count , product)

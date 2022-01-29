@@ -4,7 +4,7 @@ import ItemList from '../components/ItemList';
 import Loader from '../components/Loader';
 import { CartContext } from '../contexts/CartContext';
 import { db } from '../firebase';
-import { collection , getDocs } from "firebase/firestore"
+import { collection , getDocs , query , where} from "firebase/firestore"
 
 
 
@@ -13,40 +13,42 @@ const ItemListContainer = () => {
   const [products,setProducts] = useState([])
   const [loading,setLoading] = useState(false)
   const { id } = useParams()
-  const { cartArray } = useContext(CartContext)
 
 useEffect(()=>{
-
-  const productsCollection = collection(db, "products")
-  const request = getDocs(productsCollection)
-
-  request
-  .then((result)=>{
-    const docs = result.docs
-    const newDocs = docs.map(doc=>{
-      const product = {
-        id : doc.id,
-        ...doc.data()
-      }
-      return product
+  if(id){
+    const productsCollection = collection(db, "products")
+    const filter = where("categorie" , "==" , id)
+    const queryCat = query(productsCollection, filter)
+    const request = getDocs(queryCat)
+    request
+    .then((result)=>{
+      setProducts(result.docs.map(doc => ({id : doc.id, ...doc.data()})))
+      setLoading(false)
     })
-    setProducts(newDocs)
-    setLoading(false)
-  })
-  .catch((error)=>{
-    console.log(error)
-  })
-  
+    .catch((error)=>{
+      console.log(error)
+    })
+  }else {
+    const productsCollection = collection(db, "products")
+    const request = getDocs(productsCollection)
+    request
+    .then((result)=>{
+      setProducts(result.docs.map(doc => ({id : doc.id, ...doc.data()})))
+      setLoading(false)
+    })
+    .catch((error)=>{
+      console.log(error)
+    })
+  }
+
 },[id])
-
-
   return(
     <div>
-      {loading ? <Loader/> : <ItemList products={products} />}
+      {loading
+       ? <Loader/> 
+       : <ItemList products={products} />}
     </div>
   )
-  
-
 }
 
 
