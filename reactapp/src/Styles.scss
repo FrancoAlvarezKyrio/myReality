@@ -1,4 +1,4 @@
-
+// MOBILE 
 //Nav
 #navBarDiv{
     background-color: rgb(81, 233, 89);
@@ -73,35 +73,29 @@
     display: flex;
     margin-bottom: 70px;
     p{
-        margin-top: 15px;
+        margin-top: 20px;
     }
     button{
         border-radius: 5px;
+        margin: 5px;
+        color: white;
+        border-color: white;
     }
 }
 #divItemDetail{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#cardItemDetail{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     img{
-        height: 170px;
-        width: 150px;
+        width: 250px;
+        margin-left: 50px;
     }
-    p{
-        font-size: 13px;
-    }
-    button{
-        margin: 5px;
-        color: white;
+    h3{
+        font-size: 30px;
     }
 }
-.titleItemDetail{
-    font-size: 18px;
+#colItemDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center !important;
 }
 .priceDetail{
     margin-left: 30px;
@@ -114,6 +108,7 @@
 }
 #addToCartButton{
     background-color: rgb(81, 233, 89);
+    width: 200px;
 }
 //Cart
 #cart {
@@ -162,9 +157,9 @@
     flex-direction: column;
     align-items: center;
 }
-
+// MEDIA QUERIE PC
 @media screen and (min-width: 1280px) {
-    //Nav
+//Nav
     #navBarDiv{
         background-color: rgb(81, 233, 89);
     }
@@ -215,12 +210,12 @@
         margin-left: 540px;
         margin-bottom: 50px;
     }
-    //Banner 
+//Banner 
     #bannerImg{
         height: 400px;
         margin-bottom: 25px;
     }
-    //Item
+//Item
     #itemDiv {
         display: inline-block;
         padding: 45px;
@@ -243,9 +238,109 @@
             p{
                 font-size: 35px;
             }
-            .titleItemDetail{
-                font-size: 18px;
-                color: red;
-            }
+    }
+//Item detail
+    .countDiv {
+        display: flex;
+        margin-bottom: 70px;
+        p{
+            font-size: 30px !important;
+            margin-top: 60px;
+        }
+        button{
+            border-radius: 5px;
+            font-size: 30px !important;
+            margin-top: 50px !important;
+        }
+    }
+    #divItemDetail{
+        img{
+            height: 600px;
+            width: 600px;
+        }
+        h1{
+            font-size: 45px;
+            margin-bottom: 35px;
+        }
+        h3{
+            font-size: 35px;
+            margin-top: 50px;
+        }
+        p{
+            font-size: 20px;
+        }
+        button{
+            margin: 15px;
+            padding: 10px;
+            color: white;
+        }
+    }
+    #colItemDetail{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    #addButton{
+        background-color: rgb(66, 94, 219);
+        
+    }
+    #decreaseButton{
+        background-color: red;
+    }
+    #addToCartButton{
+        background-color: rgb(81, 233, 89);
+        width: 200px;
+    }
+//Cart Item
+#cart {
+    display: flex;
+    flex-direction: column;
+}
+#cartText{
+    text-align: center;
+    margin-bottom: 420px;
+}
+#cartItem{
+    max-width: 700px;
+    img{
+    width: 200px;
+    height: 200px;
+    }
+    button{
+    margin-left: 190px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 300px;
+    font-size: 20px;
     }
 }
+#row{
+    font-size: 30px;
+}
+#totalCart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    button{
+    margin-top: 25px;
+    margin-bottom: 70px;
+    background-color: rgb(81, 233, 89) ;
+    border-color: rgb(81, 233, 89) ;
+    width: 100%;
+    }
+    button:hover{
+    background-color: rgb(10, 151, 17) ;
+    }
+}
+.totalItemsText{
+    font-size: 20px;
+}
+.totalPriceText{
+    font-size: 25px;
+}
+.totalTitleText{
+    font-size: 35px;
+}
+}
+

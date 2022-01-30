@@ -1,20 +1,13 @@
 import React from 'react';
-import { Button , Spinner } from "react-bootstrap"
+import { Spinner } from "react-bootstrap"
 
 const Loader = () => {
   return (
   <div>
-  <Button variant="primary" disabled>
-    <Spinner
-      as="span"
-      animation="grow"
-      size="sm"
-      role="status"
-      aria-hidden="true"
-    />
-    Loading...
-  </Button>
-  </div>
+  <Spinner animation="grow" variant="secondary" />
+  <Spinner animation="grow" variant="secondary" />
+  <Spinner animation="grow" variant="secondary" />
+  </div> 
   )
 };
 

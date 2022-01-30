@@ -45,8 +45,8 @@ useEffect(()=>{
   return(
     <div>
       {loading
-       ? <Loader/> 
-       : <ItemList products={products} />}
+              ? <Loader/> 
+              : <ItemList products={products} />}
     </div>
   )
 }

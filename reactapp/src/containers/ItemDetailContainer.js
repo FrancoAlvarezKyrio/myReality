@@ -41,7 +41,9 @@ const onAdd = (count) => {
 
   return(
     <div>
-      {loading ? <Loader/> : <ItemDetail onAdd={onAdd} product={product} added={added} />}
+      {loading 
+               ? <Loader/> 
+               : <ItemDetail onAdd={onAdd} product={product} added={added} />}
     </div>
   )
   

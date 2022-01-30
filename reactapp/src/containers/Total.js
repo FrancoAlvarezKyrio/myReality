@@ -10,13 +10,13 @@ const Total = () => {
     <div id='totalCart'>
         {productAcc()> 0 &&
         <Card className="text-center">
-         <Card.Header>MyRealityGrowshop</Card.Header>
+         <Card.Header className='totalTitleText'>MyRealityGrowshop</Card.Header>
           <Card.Body>
-              <Card.Text>
-                Total items : {productAcc()}
+              <Card.Text className='totalItemsText'>
+                Total items: {productAcc()} Units
               </Card.Text>
-              <Card.Text>
-                Total price : $ {totalPrice()}
+              <Card.Text className='totalPriceText'>
+                Total price: ${totalPrice()}
               </Card.Text>
           <Button variant="primary" onClick={clearCart}>Finish purchase</Button>
           </Card.Body>
