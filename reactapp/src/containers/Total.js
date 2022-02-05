@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../contexts/CartContext';
 import { Card , Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 
@@ -18,7 +19,7 @@ const Total = () => {
               <Card.Text className='totalPriceText'>
                 Total price: ${totalPrice()}
               </Card.Text>
-          <Button variant="primary" onClick={clearCart}>Finish purchase</Button>
+          <Link to="/signin"><Button variant="primary" onClick={clearCart}>Finish purchase</Button></Link>
           </Card.Body>
         </Card>}
     </div>

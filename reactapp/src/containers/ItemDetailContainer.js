@@ -11,7 +11,7 @@ import { collection, getDoc, doc } from 'firebase/firestore';
 const ItemDetailContainer = () => {
 
   const [product,setProduct] = useState([])
-  const [loading,setLoading] = useState(false)
+  const [loading,setLoading] = useState(true)
   const [added,setAdded] = useState(false)
   const { id } = useParams()
   const { addToCart } = useContext(CartContext)

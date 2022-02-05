@@ -3,10 +3,10 @@ import { Spinner } from "react-bootstrap"
 
 const Loader = () => {
   return (
-  <div>
-  <Spinner animation="grow" variant="secondary" />
-  <Spinner animation="grow" variant="secondary" />
-  <Spinner animation="grow" variant="secondary" />
+  <div id='loader'>
+  <Spinner animation="border" variant="info" />
+  <Spinner animation="border" variant="info" />
+  <Spinner animation="border" variant="info" />
   </div> 
   )
 };

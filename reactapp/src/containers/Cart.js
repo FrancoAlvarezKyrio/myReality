@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import { CartContext } from '../contexts/CartContext';
 import CartItem from '../components/CartItem';
 import { Link } from 'react-router-dom';
 import Total from './Total';
+import { CartContext } from '../contexts/CartContext';
 
 const Cart = () => {
 

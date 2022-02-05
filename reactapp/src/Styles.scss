@@ -1,7 +1,9 @@
-// MOBILE 
+// MOBILE DIMENSIONES IPHONE SE 
+
 //Nav
 #navBarDiv{
     background-color: rgb(81, 233, 89);
+    max-width: 375px;
 }
 #navTitle{
     font-size: 15px;
@@ -17,10 +19,17 @@
     text-decoration: none;
     color: white;
 }
-#navCats{
+#basic-nav-dropdown{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
     text-decoration: none;
-    color: white !important;
-    background-color: rgb(81, 233, 89);
+}
+#navCats{
+    color: rgb(81, 233, 89);
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 #navToggle{
     color: rgb(81, 233, 89);
@@ -30,21 +39,88 @@
     width: 125px;
     height: 60px;
 }
-
 #cartWidget {
     color: rgb(255, 255, 255);
     margin-left: 150px;
+    width: 20px !important;
 }
-
 #badge {
     background-color: rgb(255, 255, 255) !important;
     color: rgb(81, 233, 89);
+    width: 15px !important;
+    height: 15px !important;
+    font-size: 10px;
+    margin-bottom: 30px;
 }
+#signInButton{
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    border-color: white;
+    color: rgb(81, 233, 89);
+    margin-left: 135px;
+    margin-right: 75px;
+}
+#signInButton:hover{
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(245, 240, 240);
+    border-color: rgb(245, 240, 240);
+    color: rgb(81, 233, 89);
+}
+#logOutButton{
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    border-color: white;
+    color: rgb(81, 233, 89);
+    margin-left: 115px;
+    margin-right: 75px;
+}
+#logOutButton:hover{
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(245, 240, 240);
+    border-color: rgb(245, 240, 240);
+    color: rgb(81, 233, 89);
+}
+//Profile
+#profileDiv{
+    color: white;
+    img{
+        width: 50px;
+        height: 50px;
+        margin-left: 140px;
+        margin-bottom: 20px;
+    }
+    h2{
+        margin-left: 70px;
+    }
+    p{
+        margin-left: 30px;
+    }
+}
+
+
+
 //Banner 
 #bannerImg{
     height: 180px;
     margin-bottom: 25px;
 }
+
+//Loader
+#loader {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 300px;
+}
+
 //Item
 #itemDiv {
     display: inline-block;
@@ -68,6 +144,7 @@
             font-size: 25px;
         }
 }
+
 //Item detail
 .countDiv {
     display: flex;
@@ -100,6 +177,7 @@
 .priceDetail{
     margin-left: 30px;
 }
+//Item detail buttons
 #addButton{
     background-color: rgb(66, 94, 219);
 }
@@ -110,6 +188,7 @@
     background-color: rgb(81, 233, 89);
     width: 200px;
 }
+
 //Cart
 #cart {
     display: flex;
@@ -150,15 +229,20 @@
     button:hover{
         background-color: rgb(10, 151, 17) ;
     }
-}
+} 
+
 //Footer
 #footer {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+
+
 // MEDIA QUERIE PC
 @media screen and (min-width: 1280px) {
+
 //Nav
     #navBarDiv{
         background-color: rgb(81, 233, 89);
@@ -179,42 +263,70 @@
         color: white;
         font-size: 20px;
     }
-    #navCats{
-        text-decoration: none;
-        color: white !important;
-        background-color: rgb(81, 233, 89);
+    #basic-nav-dropdown{
+        color: rgb(255, 255, 255);
         font-size: 20px;
     }
     #navToggle{
         color: rgb(81, 233, 89);
         border-color: rgb(81, 233, 89);
     }
-
     .imagenLogo{
         width: 350px;
         height: 150px;
+    } 
+    #divNavBar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    
     #cartWidget {
         color: rgb(255, 255, 255);
-        margin-left: 500px;
-        margin-top: 50px;
+        width: 35px !important;
+        height: 30px !important;
+        margin-left: 50px;
     }
-    
+    #cartWidget:hover {
+        color: rgb(230, 225, 225);
+    }
     #badge {
         background-color: rgb(255, 255, 255) !important;
         color: rgb(81, 233, 89);
-        font-size: 15px;
-        width: 30px;
-        height: 25px;
-        margin-left: 540px;
+        font-size: 10px;
+        font-weight:900;
+        width: 20px !important;
+        height: 18px !important;
         margin-bottom: 50px;
+        margin-left: 0px;
     }
+    #badge:hover {
+        background-color: rgb(240, 236, 236)!important;
+        color: rgb(81, 233, 89);
+    }
+    #signInButton{
+        width: 100px;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: white;
+        border-color: white;
+        color: rgb(81, 233, 89);
+        margin-left: 500px;
+    }
+    #signInButton:hover{
+        width: 100px;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: rgb(245, 240, 240);
+        border-color: rgb(245, 240, 240);
+        color: rgb(81, 233, 89);
+    }
+
 //Banner 
     #bannerImg{
         height: 400px;
         margin-bottom: 25px;
     }
+
 //Item
     #itemDiv {
         display: inline-block;
@@ -239,6 +351,7 @@
                 font-size: 35px;
             }
     }
+
 //Item detail
     .countDiv {
         display: flex;
@@ -280,6 +393,7 @@
        flex-direction: column;
        align-items: center;
     }
+    // Item detail buttons
     #addButton{
         background-color: rgb(66, 94, 219);
         
@@ -291,13 +405,15 @@
         background-color: rgb(81, 233, 89);
         width: 200px;
     }
-//Cart Item
+
+//Cart 
 #cart {
     display: flex;
     flex-direction: column;
 }
 #cartText{
     text-align: center;
+    margin-top: 100px;
     margin-bottom: 420px;
 }
 #cartItem{
@@ -342,5 +458,9 @@
 .totalTitleText{
     font-size: 35px;
 }
+
+
+
+
 }
 

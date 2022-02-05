@@ -2,7 +2,6 @@ import React, { useEffect , useState , useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemList from '../components/ItemList';
 import Loader from '../components/Loader';
-import { CartContext } from '../contexts/CartContext';
 import { db } from '../firebase';
 import { collection , getDocs , query , where} from "firebase/firestore"
 
@@ -11,7 +10,7 @@ import { collection , getDocs , query , where} from "firebase/firestore"
 const ItemListContainer = () => {
 
   const [products,setProducts] = useState([])
-  const [loading,setLoading] = useState(false)
+  const [loading,setLoading] = useState(true)
   const { id } = useParams()
 
 useEffect(()=>{

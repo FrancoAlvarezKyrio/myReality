@@ -1,18 +1,17 @@
 import React, { createContext , useState } from 'react';
 import { toast } from 'react-toastify';
 
+
 export const CartContext = createContext()
 
 const CartProvider = ({ children }) => {
 
     const [cartArray, setCartArray] = useState ([])
 
-
     const addToCart = (count , product) => {
         if(isInCart(product.id)){
             console.log("El producto ya ha sido añadido al carrito")
         }else{
-            console.log(`Agregaste ${count} unidades de ${product.title}`)
             const newObj = {
                 item: product,
                 count
@@ -52,7 +51,7 @@ const CartProvider = ({ children }) => {
         
     }
   return (
-  <CartContext.Provider value={value}>
+  <CartContext.Provider value={value}>  
     {children}
   </CartContext.Provider>
   )
