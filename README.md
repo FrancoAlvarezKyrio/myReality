@@ -1,70 +1,33 @@
-# Getting Started with Create React App123
+# ***My Reality Grow***
+My Reality Grow es un proyecto creado para la venta de manera online de insumos para cultivo de todo tipo de plantas en sus dos etapas, vegetación y flora, también da detalles de cada producto, su funcionalidad y su forma de aplicación.
+## ***Tecnologías usadas***
+* El proyecto fue inicializado con *Create-React-App* y visualizado inicializando el servidor a través del comando ```npm start```
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* Comenzamos con la estructura del proyecto de manera *FirstMobile* utilizando **Html** logrando el diseño *Responsive* que nos permite visualizar el proyecto en pantallas de diferente tamaño y resolucion , y para sus respectivos estilos Box model con **Css**, **Flexbox** para el posicionamiento y haciendo uso de **Sass** como compilador para poder trabajar con una sintáxis más amigable, entre otros beneficios.
 
-## Available Scripts
+* Mediante el uso del lenguaje **JavaScript** creamos interaccion en el sitio con el usuario y volvemos al sitio más dinámico, haciendo uso de estados los cuales modificamos para que generen una accion o reaccionen para nuestra conveniencia, nos permite filtar por categorías, dar su respestivo contador de resta y suma a cada producto individualmente y obtener un total de todos los productos seleccionados, a partir de esto llegamos a la implementación del *framework ReactJs*.  
 
-In the project directory, you can run:
+* **ReactJs** nos permitió dividir nuestro proyecto y trabajar mediante componentes que luego se irían complementando el uno con el otro, también nos permitió instalar extensiones que nos harían nuestro trabajo mas fluído como *React-route*, *React-Router-Dom* para un mejor manejo de rutas y darle al sitio una estructura de *SPA* ( Single page apication),  haciendo uso de *Context* y creando su provider para poder abarcar y utilizar todas las funciones y componentes desde el lugar en que deseemos, a través de *React-Bootstrap* logramos acceder a iconos y estilos fascinantes que le dieron otro aspecto a nuestro proyecto.
 
-### `npm start`
+* **Firebase** nos permitió crear y acceder a las colecciones de productos almacenadas en el mismo y poder dar mas seguridad a nuestro proyecto permitiendonos almacenar *Keys* e información clave de una manera mas cautelosa y cuidadosa.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* A través de **Git** y su respectiva terminal pude instalar uno por uno todos los elementos que utilicé para este proyecto y a través de **GitHub** pude documentar, guardar y subir todos los cambios que iba realizando. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **Auth0** es una tecnología que conocí en la recta final, me permitió de manera ágil y sencilla crear un formulario autenticado para el ingreso y egreso del usuario al proyecto.  
 
-### `npm test`
+### Comando utilizados
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ ```npm i sass```
+ ```npm i bootstrap```
+ ```npm i react-bootstrap```
+ ```npm i react-route```
+ ```npm i react-router-dom```
+ ```npm i firebase```
+ ```npm i auth0```
+ ```git log```
+ ```git status```
+ ```git add ```
+ ```git commit -m ""```
+ ```git push```
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ [Link al sitio web](www.google.com)
