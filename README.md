@@ -3,7 +3,7 @@ My Reality Grow es un proyecto creado para la venta de manera online de insumos 
 ## ***Tecnologías usadas***
 * El proyecto fue inicializado con *Create-React-App* y visualizado inicializando el servidor a través del comando ```npm start```
 
-* Comenzamos con la estructura del proyecto de manera *FirstMobile* utilizando **Html** logrando el diseño *Responsive* que nos permite visualizar el proyecto en pantallas de diferente tamaño y resolucion , y para sus respectivos estilos hacemos uso del Box model con **Css** y **Flexbox** para el correcto posicionamiento y estilos de los componentes, también haciendo uso de **Sass** como compilador para poder trabajar con una sintáxis más amigable, entre otros beneficios.
+* Comenzamos con la estructura del proyecto de manera *FirstMobile* con las dimensiones predeterminada de la consola llamada *IphoneSE* utilizando **Html** logrando el diseño *Responsive* que nos permite visualizar el proyecto en pantallas de diferente tamaño y resolucion, un minimo de 1280width para su visualización en PC, y para sus respectivos estilos hacemos uso del Box model con **Css** y **Flexbox** para el correcto posicionamiento y estilos de los componentes, también haciendo uso de **Sass** como compilador para poder trabajar con una sintáxis más amigable, entre otros beneficios.
 
 * Mediante el uso del lenguaje **JavaScript** creamos interacción en el sitio con el usuario y lo volvemos más dinámico, haciendo uso de estados los cuales modificamos para que generen una acción o reaccionen para nuestra conveniencia, nos permite filtrar por categorías, mostrar su respectivo contador de resta y suma en cada producto individualmente y obtener un total de todos los productos seleccionados. 
 
@@ -13,7 +13,7 @@ My Reality Grow es un proyecto creado para la venta de manera online de insumos 
 
 * A través de **Git** y su respectiva terminal pude instalar uno por uno todos los elementos que utilicé para este proyecto y a través de **GitHub** pude documentar, guardar y subir todos los cambios que iba realizando. 
 
-* **Auth0** es una tecnología que conocí en la recta final, me permitió de manera ágil y sencilla crear un formulario autenticado para el ingreso y egreso del usuario al proyecto.  
+* **Auth0** es una tecnología que conocí en la recta final, me permitió de manera ágil y sencilla crear un formulario autenticado para el ingreso y egreso del usuario al proyecto, este mismo esta programado para ingresar con la cuenta de Google.  
 
 ### Comando utilizados
 
