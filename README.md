@@ -15,7 +15,7 @@ My Reality Grow es un proyecto creado para la venta de manera online de insumos 
 
 * **Auth0** es una tecnología que conocí en la recta final, me permitió de manera ágil y sencilla crear un formulario autenticado para el ingreso y egreso del usuario al proyecto, este mismo esta programado para ingresar con la cuenta de Google.  
 
-### Comando utilizados
+### ***Comando utilizados***
 
  ```npm i sass```
  ```npm i bootstrap```
