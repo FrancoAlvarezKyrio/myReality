@@ -3,7 +3,7 @@ My Reality Grow es un proyecto creado para la venta de manera online de insumos 
 ## ***Tecnologías usadas***
 * El proyecto fue inicializado con *Create-React-App* y visualizado inicializando el servidor a través del comando ```npm start```
 
-* Comenzamos con la estructura del proyecto de manera *FirstMobile* utilizando **Html** logrando el diseño *Responsive* que nos permite visualizar el proyecto en pantallas de diferente tamaño y resolucion , y para sus respectivos estilos Box model con **Css**, **Flexbox** para el posicionamiento y haciendo uso de **Sass** como compilador para poder trabajar con una sintáxis más amigable, entre otros beneficios.
+* Comenzamos con la estructura del proyecto de manera *FirstMobile* utilizando **Html** logrando el diseño *Responsive* que nos permite visualizar el proyecto en pantallas de diferente tamaño y resolucion , y para sus respectivos estilos hacemos uso del Box model con **Css** y **Flexbox** para el correcto posicionamiento y estilos de los componentes y también haciendo uso de **Sass** como compilador para poder trabajar con una sintáxis más amigable, entre otros beneficios.
 
 * Mediante el uso del lenguaje **JavaScript** creamos interaccion en el sitio con el usuario y volvemos al sitio más dinámico, haciendo uso de estados los cuales modificamos para que generen una accion o reaccionen para nuestra conveniencia, nos permite filtar por categorías, dar su respestivo contador de resta y suma a cada producto individualmente y obtener un total de todos los productos seleccionados, a partir de esto llegamos a la implementación del *framework ReactJs*.  
 
