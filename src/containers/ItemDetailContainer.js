@@ -7,7 +7,6 @@ import { toast } from 'react-toastify';
 import { db } from '../firebase';
 import { collection, getDoc, doc } from 'firebase/firestore';
 
-
 const ItemDetailContainer = () => {
 
   const [product,setProduct] = useState([])
@@ -26,10 +25,8 @@ useEffect(()=>{
     setLoading(false)
   })
   .catch((error)=>{
-    console.log(error)
+    toast.error(error)
   })
-
-
 },[id])
 
 const onAdd = (count) => {
@@ -37,8 +34,6 @@ const onAdd = (count) => {
   setAdded(true)
   toast.success(`The product was added to the cart`)
 }
-
-
   return(
     <div>
       {loading 
@@ -46,7 +41,5 @@ const onAdd = (count) => {
                : <ItemDetail onAdd={onAdd} product={product} added={added} />}
     </div>
   )
-  
-
 }
 export default ItemDetailContainer;

@@ -10,9 +10,7 @@ import './Styles.scss'
 import Cart from './containers/Cart';
 import CartProvider from './contexts/CartContext'
 import { ToastContainer } from 'react-toastify';
-import Header from './components/Header';
-
-
+import Header from './components/Banner';
 
 const App = () => {
     return (

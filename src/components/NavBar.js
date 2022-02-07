@@ -23,16 +23,17 @@ const NavBar = () => {
                   <NavDropdown.Item id='navCats' as="span"><Link id='navCats' to="/cat/flowering">Flowering</Link></NavDropdown.Item>
                   </NavDropdown>
                 <Nav.Link as="span"><Link id='navContact' to="contact">Contact</Link></Nav.Link>
+                <Link to="/cart"><CartWidget/></Link>
               </Nav>
             </Navbar.Collapse>
+
             <div className='profileDiv'>
-            {isAuthenticated ? (<><Profile/><Link to="/cart"><CartWidget/></Link><LogOutButton/></>)
-                             : (<LogInButton/>)}
+              {isAuthenticated ? (<><Profile/><LogOutButton/></>)
+                               : (<LogInButton/>)}
             </div>
               
     </Container>
   </Navbar>
-
   )
 };
 

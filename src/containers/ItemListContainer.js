@@ -1,11 +1,10 @@
-import React, { useEffect , useState , useContext } from 'react';
+import React, { useEffect , useState  } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemList from '../components/ItemList';
 import Loader from '../components/Loader';
 import { db } from '../firebase';
 import { collection , getDocs , query , where} from "firebase/firestore"
-
-
+import { toast } from 'react-toastify';
 
 const ItemListContainer = () => {
 
@@ -25,7 +24,7 @@ useEffect(()=>{
       setLoading(false)
     })
     .catch((error)=>{
-      console.log(error)
+      toast.error(error)
     })
   }else {
     const productsCollection = collection(db, "products")
@@ -36,7 +35,7 @@ useEffect(()=>{
       setLoading(false)
     })
     .catch((error)=>{
-      console.log(error)
+      toast.error(error)
     })
   }
 
@@ -49,7 +48,5 @@ useEffect(()=>{
     </div>
   )
 }
-
-
 
 export default ItemListContainer;

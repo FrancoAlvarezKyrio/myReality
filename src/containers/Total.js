@@ -3,10 +3,8 @@ import { CartContext } from '../contexts/CartContext';
 import { Card , Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-
-
 const Total = () => {
-    const { productAcc , totalPrice , clearCart } = useContext(CartContext)
+  const { productAcc , totalPrice , clearCart } = useContext(CartContext)
   return(
     <div id='totalCart'>
         {productAcc()> 0 &&
@@ -23,7 +21,6 @@ const Total = () => {
           </Card.Body>
         </Card>}
     </div>
-
   ) 
 }
 

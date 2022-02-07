@@ -20,10 +20,12 @@ const ItemDetail = ({product, onAdd , added}) => {
                    <h1>{title}</h1>
                    <p>{description}</p>
                    <h3>${price}</h3>
+
                    {added 
                    ? <Link to="/cart"><BsCart size="30px" id='cartWidgetDetail'/><Badge id='badgeDetail' >{productAcc()}</Badge></Link> 
                    : <ItemCount stock={10} initial={1} onAdd={onAdd}/> 
                    }
+                   
                </Col>
            </Row>
        </Container>

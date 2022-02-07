@@ -9,8 +9,10 @@ const CartWidget = () => {
   const { productAcc } = useContext(CartContext)
 
   return (
-      <Link to="/cart"><BsCart size="30px" id='cartWidget'/><Badge id='badge' >{productAcc()}</Badge></Link>
+      <div id='divCartWidget'><Link to="/cart"><BsCart size="30px" id='cartWidget'/></Link><Badge id='badge'> {productAcc()}</Badge></div>
   )
 };
 
 export default CartWidget;
+
+

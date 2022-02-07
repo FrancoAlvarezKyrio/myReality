@@ -1,5 +1,4 @@
-// MOBILE DIMENSIONES IPHONE SE 
-
+// MOBILE IPHONE SE 
 //Nav
 #navBarDiv{
     background-color: rgb(81, 233, 89);
@@ -45,8 +44,7 @@
     margin: 0%;
 }
 #cartWidget {
-    color: rgb(255, 255, 255);
-    margin-left: 165px;
+color: rgb(255, 255, 255);
     width: 20px !important;
 }
 #badge {
@@ -55,7 +53,6 @@
     width: 15px !important;
     height: 15px !important;
     font-size: 10px;
-    margin-bottom: 30px;
 }
 #cartWidgetDetail {
     color: rgb(81, 233, 89);
@@ -123,15 +120,11 @@
         margin-left: 40px;
     }
 }
-
-
-
 //Banner 
 #bannerImg{
     height: 180px;
     margin-bottom: 25px;
 }
-
 //Loader
 #loader {
     display: flex;
@@ -139,7 +132,6 @@
     margin-top: 150px;
     margin-bottom: 300px;
 }
-
 //Item
 #itemDiv {
     display: inline-block;
@@ -164,22 +156,7 @@
             font-size: 25px;
         }
 }
-
 //Item detail
-.countDiv {
-    display: flex;
-    margin-bottom: 70px;
-    font-family: Roboto;
-    p{
-        margin-top: 20px;
-    }
-    button{
-        border-radius: 5px;
-        margin: 5px;
-        color: white;
-        border-color: white;
-    }
-}
 #divItemDetail{
     font-family: Roboto;
     img{
@@ -197,6 +174,20 @@
     align-items: center !important;
     font-family: Roboto;
 }
+.countDiv {
+    display: flex;
+    margin-bottom: 70px;
+    font-family: Roboto;
+    p{
+        margin-top: 20px;
+    }
+    button{
+        border-radius: 5px;
+        margin: 5px;
+        color: white;
+        border-color: white;
+    }
+}
 .priceDetail{
     font-family: Roboto;
     margin-left: 30px;
@@ -212,7 +203,6 @@
     background-color: rgb(81, 233, 89);
     width: 200px;
 }
-
 //Cart
 #cart {
     display: flex;
@@ -257,7 +247,6 @@
         background-color: rgb(10, 151, 17) ;
     }
 } 
-
 //Footer
 #footer {
     font-family: Roboto;
@@ -266,11 +255,8 @@
     align-items: center;
 }
 
-
-
-// MEDIA QUERIE PC
+// MEDIA QUERIE PC MIN-WIDTH 1280px
 @media screen and (min-width: 1280px) {
-
 //Nav
     #navBarDiv{
         background-color: rgb(81, 233, 89);
@@ -302,15 +288,41 @@
         color: rgb(81, 233, 89);
         border-color: rgb(81, 233, 89);
     }
+    #navTitle:hover{
+        font-size: 30px;
+        text-decoration: none;
+        color: rgb(226, 224, 224);
+        font-family: Roboto;
+    }
+    #navHome:hover{
+        text-decoration: none;
+        color: rgb(226, 224, 224);
+        font-size: 20px;
+        font-family:  Roboto;
+    }
+    #navContact:hover{
+        text-decoration: none;
+        color: rgb(226, 224, 224);
+        font-size: 20px;
+    }
+    #basic-nav-dropdown:hover{
+        color: rgb(226, 224, 224);
+        font-size: 20px;
+    }
+    #navToggle:hover{
+        border-color: rgb(81, 233, 89);
+        color: rgb(226, 224, 224);
+    }
     .imagenLogo{
         width: 250px;
         height: 100px;
     } 
-    #cartWidget {
-        color: rgb(255, 255, 255);
-        width: 35px !important;
-        height: 30px !important;
-        margin-left: 383px;
+    #divCartWidget{
+        display: flex;
+        color: white;
+    }
+    #cartWidget{
+        color: white;
     }
     #cartWidget:hover {
         color: rgb(230, 225, 225);
@@ -318,29 +330,25 @@
     #badge {
         background-color: rgb(255, 255, 255) !important;
         color: rgb(81, 233, 89);
-        font-size: 12px;
-        font-weight:900;
-        width: 20px !important;
-        height: 18px !important;
-        margin-bottom: 50px;
-        margin-left: 0px;
+        font-size: 8px;
+        width: 13px !important;
+        height: 13px !important;
     }
     #badge:hover {
         background-color: rgb(240, 236, 236)!important;
         color: rgb(81, 233, 89);
     }
     #signInButton{
-        width: 100px;
-        padding: 5px;
+        width: 80px;
+        height: 40px;
         border-radius: 5px;
         background-color: white;
         border-color: white;
         color: rgb(81, 233, 89);
-        margin-left: 500px;
+        margin-left: 170px;
     }
     #signInButton:hover{
-        width: 100px;
-        padding: 5px;
+        width: 80px;
         border-radius: 5px;
         background-color: rgb(245, 240, 240);
         border-color: rgb(245, 240, 240);
@@ -348,11 +356,13 @@
     }
     #logOutButton{
         width: 80px;
+        font-size: 10px;
         border-radius: 5px;
         background-color: white;
         border-color: white;
         color: rgb(81, 233, 89);
-        font-family:  Roboto;
+        margin-left: 245px;
+        margin-bottom: 30px;
     }
     #logOutButton:hover{
         width: 80px;
@@ -364,35 +374,33 @@
 //Profile
     #profileDiv{
         color: white;
-        margin-left: 350px;
+        margin-left: 130px;
+
         img{
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: 30px;
             margin-left: 140px;
             margin-top: 50px;
             margin-bottom: 20px;
         }
         h2{
-            margin-left: 75px;
-            font-size: 25px;
+            margin-left: 100px;
+            font-size: 15px;
         }
         p{
-            margin-left: 40px;
+            margin-left: 70px;
+            font-size: 10px;
         }
     }
-
 //Banner 
     #bannerImg{
         height: 400px;
         margin-bottom: 25px;
     }
-
 //Item
     #itemDiv {
         display: inline-block;
-        padding: 45px;
-        margin-left: 32px;
-        max-width: 550px;
+        max-width: 300px;
         font-family:  Roboto;
             img{
                 height: 300px;
@@ -412,26 +420,13 @@
                 font-size: 35px;
             }
     }
-
 //Item detail
-    .countDiv {
-        display: flex;
-        margin-bottom: 70px;
-        p{
-            font-size: 30px !important;
-            margin-top: 60px;
-        }
-        button{
-            border-radius: 5px;
-            font-size: 30px !important;
-            margin-top: 50px !important;
-        }
-    }
+
     #divItemDetail{
         font-family:  Roboto;
         img{
-            height: 600px;
-            width: 600px;
+            height: 500px;
+            width: 500px;
         }
         h1{
             font-size: 45px;
@@ -456,7 +451,20 @@
        flex-direction: column;
        align-items: center;
     }
-    // Item detail buttons
+    .countDiv {
+        display: flex;
+        margin-bottom: 70px;
+        p{
+            font-size: 30px !important;
+            margin-top: 60px;
+        }
+        button{
+            border-radius: 5px;
+            font-size: 30px !important;
+            margin-top: 50px !important;
+        }
+    }
+// Item detail buttons
     #addButton{
         background-color: rgb(66, 94, 219);
         
@@ -468,73 +476,70 @@
         background-color: rgb(81, 233, 89);
         width: 200px;
     }
-
 //Cart 
-#cart {
-    display: flex;
-    flex-direction: column;
-}
-#cartText{
-    font-family:  Roboto;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 420px;
-}
-#cartItem{
-    font-family:  Roboto;
-    max-width: 700px;
-    img{
-    width: 200px;
-    height: 200px;
+    #cart {
+        display: flex;
+        flex-direction: column;
     }
-    button{
-    margin-left: 190px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    width: 300px;
-    font-size: 20px;
+    #cartText{
+        font-family:  Roboto;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 420px;
     }
-}
-#row{
-    font-size: 30px;
-}
-#totalCart{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family:  Roboto;
-    margin-top: 50px;
-    button{
-    margin-top: 25px;
-    margin-bottom: 70px;
-    background-color: rgb(81, 233, 89) ;
-    border-color: rgb(81, 233, 89) ;
-    width: 100%;
+    #cartItem{
+        font-family:  Roboto;
+        max-width: 700px;
+        img{
+        width: 200px;
+        height: 200px;
+        }
+        button{
+        margin-left: 190px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 300px;
+        font-size: 20px;
+        }
     }
-    button:hover{
-    background-color: rgb(10, 151, 17) ;
+    #row{
+        font-size: 30px;
     }
-}
-.totalItemsText{
-    font-size: 20px;
-}
-.totalPriceText{
-    font-size: 25px;
-}
-.totalTitleText{
-    font-size: 35px;
-}
-//Footer
-#footer{
-    margin-top: 30px;
-    color: white;
-    background-color: rgb(81, 233, 89);
-}
-#bannerFooterImg{
-    height: 300px;
-}
-
-
+    #totalCart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family:  Roboto;
+        margin-top: 50px;
+        button{
+        margin-top: 25px;
+        margin-bottom: 70px;
+        background-color: rgb(81, 233, 89) ;
+        border-color: rgb(81, 233, 89) ;
+        width: 100%;
+        }
+        button:hover{
+        background-color: rgb(10, 151, 17) ;
+        }
+    }
+    .totalItemsText{
+        font-size: 20px;
+    }
+    .totalPriceText{
+        font-size: 25px;
+    }
+    .totalTitleText{
+        font-size: 35px;
+    }
+    //Footer
+    #footer{
+        margin-top: 30px;
+        color: white;
+        background-color: rgb(81, 233, 89);
+    }
+    #bannerFooterImg{
+        height: 300px;
+    }
 
 }
 
