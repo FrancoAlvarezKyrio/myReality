@@ -211,7 +211,6 @@ color: rgb(255, 255, 255);
 }
 #cartText{
     text-align: center;
-    margin-bottom: 420px;
     font-family: Roboto;
 }
 #cartItem{
@@ -238,15 +237,32 @@ color: rgb(255, 255, 255);
     margin-top: 50px;
     border-color: red;
     button{
-        margin-top: 25px;
-        margin-bottom: 70px;
+       margin-top: 25px;
+       margin-bottom: 70px;
        background-color: rgb(81, 233, 89) ;
        border-color: rgb(81, 233, 89) ;
+       width: 100%;
     }
     button:hover{
         background-color: rgb(10, 151, 17) ;
+        border-color: rgb(81, 233, 89) ;
+
     }
+}
+.clearCartButton{
+    width: 100px !important;
+    margin-left: 10px;
+    background-color: skyblue !important;
+    border-color: skyblue !important;
+    margin-bottom: 50px !important;
 } 
+//Order
+#divOrder{
+    display: flex;
+    margin-bottom: 220px;
+    font-size: 28px;
+    box-shadow: 1px 1px 5px 1px;
+}
 //Footer
 #footer {
     font-family: Roboto;
@@ -485,7 +501,6 @@ color: rgb(255, 255, 255);
         font-family:  Roboto;
         text-align: center;
         margin-top: 100px;
-        margin-bottom: 420px;
     }
     #cartItem{
         font-family:  Roboto;
@@ -510,16 +525,14 @@ color: rgb(255, 255, 255);
         flex-direction: column;
         align-items: center;
         font-family:  Roboto;
-        margin-top: 50px;
         button{
-        margin-top: 25px;
-        margin-bottom: 70px;
         background-color: rgb(81, 233, 89) ;
         border-color: rgb(81, 233, 89) ;
         width: 100%;
         }
         button:hover{
         background-color: rgb(10, 151, 17) ;
+        border-color: rgb(81, 233, 89) ;
         }
     }
     .totalItemsText{
@@ -531,6 +544,19 @@ color: rgb(255, 255, 255);
     .totalTitleText{
         font-size: 35px;
     }
+    .clearCartButton{
+        width: 250px !important;
+        background-color: skyblue !important;
+        border-color: skyblue !important;
+        margin-bottom: 50px !important;
+    }
+    //Order
+    #divOrder{
+        display: flex;
+        margin-bottom: 220px;
+        font-size: 50px !important;
+        box-shadow: 1px 1px 5px 1px;
+}
     //Footer
     #footer{
         margin-top: 30px;
